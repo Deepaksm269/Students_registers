@@ -1,0 +1,60 @@
+add_students_to_list
+print_students_from_list
+save_students_to_csv_file
+load_students_from_csv_file
+save_students_to_db_file
+load_students_from_db_file
+
+
+###############################################################################################
+
+
+@add_students_to_list
+ >We are creating a list called  students=[] 
+ >Here we are getting the data from user.
+ >An user can give  - name,classs,section,roll_no
+ > students.append(Student(name, classs, section, roll_num)) it will append to the students list.
+ >We should call the function at last
+#####################################
+
+@print_students_from_list
+ >Here we print students data from the list.
+ >len(students) has called because to know how much students are there in the list.
+ >__repr__ is instance of the class.
+#######################################  
+@save_students_to_txt_file
+ >Here we are save to the txt.file 
+ >'a' is append  
+#######################################
+@load_students_from_txt_file
+ >Here we are loading the students data from the txt file
+ >we used count to how many students data were presented.
+#######################################
+
+@save_students_to_csv_file
+ >Here we are going to save the students data in the csv file.
+ >It should be written in the rows format.
+ >In the csv.file ,we did header as the constant 
+ #######################################
+
+@load_students_from_csv_file
+ >Here we are loading the students data from the csv.file.
+ >It will load and show how many students are there in the csv file.
+ >we gave index format to the Student rows.
+#######################################
+
+@prepare_database
+ > Here we are create a database to store students data.
+ >The student table has been created
+ >isStudentsTableExists # only to test if the database file is already present   
+#######################################
+
+@save_students_to_db_file 
+ > Here we going save in the database.
+ >  c.execute('SELECT * FROM STUDENTS') , it will display all the data of students
+#######################################
+
+@load_students_from_db_file
+ >It will load the students data from the database.
+ >here we are fetching the data from rows.
+ #######################################
